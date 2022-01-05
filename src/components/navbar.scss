@@ -1,0 +1,61 @@
+.wrapper{
+    border:5px;
+    border-radius: 50% solid rgb(255, 0, 255);
+    padding-top:1rem;
+    text-align: center;
+    
+    .top{
+        color: white;
+        padding: 0.5rem;
+        .outer{
+            background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:7.2rem;
+            height:7.2rem;
+            margin: 0 auto;
+
+            border-radius: 50%;
+        }
+        img{
+            height:7rem;
+            width:7rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid ;
+            background-color: #111;
+        }
+        .name{
+            font-size:1.5rem;
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+    .menu ul{
+        padding: 1.5rem 3rem;
+        li{
+            background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+            padding: 0.2rem;
+            margin: 1rem;
+            //border-radius: 1rem;
+            a{
+                display: block;
+                padding:0.3rem;
+                background: #333;
+                color: #fff;
+                font-size:1rem;
+                //border-radius:0.7rem;
+                text-decoration: none;
+                font-variant: small-caps;
+            }
+            a:hover{
+            
+                background: whitesmoke;
+                color: #111;
+            
+            }
+            
+        }
+    }
+}

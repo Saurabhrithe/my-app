@@ -1,0 +1,86 @@
+.contact{
+    background-color: #145E64;
+    display: flex;
+    flex-direction: column;
+    
+    .contact_head{
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;
+        width:100%;
+        margin: 0 auto;
+        color: white;
+        text-decoration: underline;
+        font-variant: small-caps;
+    }
+    .box_contact{ 
+        max-width: 600px;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 0 auto;
+        .form{
+            padding: 1rem;
+            max-width: 300px;
+            .Name, .phone, .mail, .description, .contact_button{
+                padding: 5px;
+            } 
+            .fname{
+                width:48%;
+                margin-right:4%;
+            }
+            .lname{
+                width:48%;
+            }
+            .phone_no, .mail_id{
+                width:100%;
+            }
+            .fname, .lname, .phone_no, .mail_id, .msg{
+                padding: 0.3rem;
+                border-radius: 7px;
+                font-size: 0.7rem;
+            }
+            .msg{
+                height: 100px;
+                min-width: 100%;
+            }
+            .contact_button{
+                margin-left: 1rem;
+                width:100px;
+                background-color: #111;
+                height:35px;
+                text-align: center;
+                cursor: pointer;
+                text-transform: uppercase;
+                color: wheat;
+                border-radius: 5px;
+            }
+        }
+        .social_contact{
+            max-width: 80px;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            .icon{
+                width:40px;
+                height:40px;
+                padding: 0.5rem;
+                background-color: white;
+                border-radius: 50%;
+                text-align: center;
+               
+                margin: 0 auto;
+                margin-top: 0.5rem;
+                margin-right: 1rem;
+            }
+            @media only screen and (max-width: 450px){
+                flex-direction: row;
+                max-width:300px;
+               
+            }
+        }
+    }
+}

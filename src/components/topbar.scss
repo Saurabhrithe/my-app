@@ -1,0 +1,59 @@
+.topname{
+  color: white;
+  width: auto;
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: 1s smooth;
+  align-items: center;
+  .headerName{
+    padding-left: .5rem;
+    padding-right: 0.5rem;
+  }
+  .topbar{
+      width:80px;
+      display: none;
+      .hamburger{
+        cursor: pointer;
+        
+        display: none;
+        width: 25px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        margin:10px auto;
+      
+        span{
+          width: 25px;
+          height: 3px;
+          
+          margin:3px auto;
+          vertical-align: middle;
+          
+          background-color: white;
+          transition: all 0.5s ease;
+        }
+    }
+    &.active{
+      .hamburger{
+        span{
+        transform-origin: left;
+        &:first-child{
+          transform: rotate(45deg);
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:last-child{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1100px) { 
+    display: block;
+    
+  }
+  }
+}
