@@ -18,8 +18,7 @@ export default function Contact() {
                 <h3 className="contact_head">
                     Contact Me
                 </h3>
-                 <form name="contact" method="POST" data-netlify="true" 
-                 >
+                 <form name="contact" method="POST" action='form.php'>
                     <input type="hidden" name="contact" value="contact" />
                     
                     <input type="text" className="name" name="name" placeholder='Name'/>
