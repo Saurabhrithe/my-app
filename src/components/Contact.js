@@ -19,17 +19,10 @@ export default function Contact() {
                     Contact Me
                 </h3>
                  <form name="contact" method="POST" action='form.php'>
-                    <input type="hidden" name="contact" value="contact" />
-                    
                     <input type="text" className="name" name="name" placeholder='Name'/>
-                    
                     <input type="text" className="mail_id" name="mail" placeholder='Email'/>
-        
-                    
                     <textarea placeholder="Your message" name="msg" className="msg"></textarea>
-                    
-                    <button type="submit" className="contact_button">Send</button>
-                    
+                    <button type="submit" value="Submit" className="contact_button">Send</button>
                 </form>
                 <div className="social_contact">
                     <div className="icon"><a href="https://www.instagram.com/saurabhrithe/"><i className="fab fa-instagram"></i></a></div>
