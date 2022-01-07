@@ -1,6 +1,6 @@
 import React from 'react'
 import "./navbar.scss"
-import Photo from '../assets/material/Photo.jpg'
+import Photo1 from '../assets/material/Photo1.jpg'
 
 export default function Navbar({menuOpen, setMenuOpen}) {
     return (
@@ -8,7 +8,7 @@ export default function Navbar({menuOpen, setMenuOpen}) {
             <div className={"wrapper "+(menuOpen && "active")}>
                 <div className="top">
                     <div className="outer">
-                    <img src={Photo} alt="" />
+                    <img src={Photo1} alt="" />
                     </div>
                     
                     <h2 className='name'>Saurabh Rithe</h2>
@@ -23,7 +23,6 @@ export default function Navbar({menuOpen, setMenuOpen}) {
 
                     </ul>
                 </div>
-                
             </div>
     )
 }

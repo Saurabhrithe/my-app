@@ -1,7 +1,10 @@
 .skills{
     padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+   
     .skill_head{
-        background-color: #111;
+        border-bottom: 2px solid yellow;
         text-align: center;
         margin-top: 1rem;
         padding: 1rem;
@@ -12,10 +15,11 @@
         font-variant: small-caps;
     }
     .skill_items{
+        border: 2px solid white;
         max-width:550px;
         margin: 0 auto;
         display: grid;
-        background-color: #222;
+        
         border-radius: 10px;
         color: white;
         grid-template-columns: repeat(auto-fit, minmax(3rem, 5.7rem));

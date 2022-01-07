@@ -22,30 +22,21 @@
         border-radius: 10px;
         padding: 1rem;
         margin: 0 auto;
-        .form{
-            padding: 1rem;
-            max-width: 300px;
-            .Name, .phone, .mail, .description, .contact_button{
-                padding: 5px;
-            } 
-            .fname{
-                width:48%;
-                margin-right:4%;
-            }
-            .lname{
-                width:48%;
-            }
-            .phone_no, .mail_id{
-                width:100%;
-            }
-            .fname, .lname, .phone_no, .mail_id, .msg{
+        form{
+           display: flex;
+           flex-direction: column;
+            .name, .mail_id, .msg, .contact_button{
+                margin: 0.3em;
                 padding: 0.3rem;
                 border-radius: 7px;
                 font-size: 0.7rem;
+            } 
+            .name, .mail_id{
+                width: 250px;
             }
             .msg{
                 height: 100px;
-                min-width: 100%;
+                width: 250px;
             }
             .contact_button{
                 margin-left: 1rem;
@@ -76,11 +67,14 @@
                 margin-top: 0.5rem;
                 margin-right: 1rem;
             }
-            @media only screen and (max-width: 450px){
+            
+        }
+        @media only screen and (max-width: 450px){
+            .social_contact{
                 flex-direction: row;
                 max-width:300px;
-               
             }
+            
         }
     }
 }

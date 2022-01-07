@@ -1,8 +1,8 @@
 .about{
     padding: 1rem;
-    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     .AboutMe{
-        background-color: #111;
         text-align: center;
         margin-top: 1rem;
         padding: 1rem;
@@ -11,11 +11,11 @@
         color: white;
         text-decoration: underline;
         font-variant: small-caps;
-        
+        border-bottom: 2px solid yellow;
     }
     
     .boxA{
-        background-color:#222;
+        border: 2px solid white;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -28,12 +28,10 @@
         color: white;
         .hi{
             font-size: 1rem;
-            max-width:450px;
         }
         .myname{
             font-weight: 500;
             font-size: 1.5rem;
-            max-width:450px;
         }
         .text{
             width:450px;
@@ -42,7 +40,7 @@
             padding: 0.2rem;
             margin-top: 1rem;
             
-            .Resume{
+            /*.Resume{
                 max-width:160px;
                 padding: 0.5rem;
                 border-radius: 5px;
@@ -52,7 +50,7 @@
                 background: white;
                 text-decoration: none;
                 color: black;
-            }
+            }*/
             .social{
                 display: flex;
                 margin-top:1.5rem;
@@ -66,7 +64,6 @@
                     border-radius: 50%;
                     text-align: center;
                     margin-right: 1rem;
-                    
                 }
             }
         }
@@ -77,8 +74,6 @@
                 width:auto;
             }
         }
-        
     }
-
 }
     

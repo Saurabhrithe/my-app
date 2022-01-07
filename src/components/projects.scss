@@ -1,7 +1,9 @@
 .main_projects{
     padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     .ProjectHead{
-        background-color: #111;
+        border-bottom: 2px solid yellow;
         text-align: center;
         margin-top: 1rem;
         padding: 1rem;
@@ -14,20 +16,19 @@
     .Items{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(1rem, 18rem));
-        gap: 1.5rem;
+        gap: 2.5rem;
         justify-content: center;
         align-items: center;
         padding:1rem;
 
         flex-wrap: wrap;
-
-        box-sizing: border-box;
+        
   }
 }
 .card{
-    background-color: #FFFFF0;
-    overflow: hidden;
-    box-shadow: 0 2px 10px 5px;
+    background-color: #555;
+    
+    box-shadow: 0 2px 5px 5px;
     border-radius: 25px;
     display: flex;
     flex-flow: column;
@@ -36,6 +37,7 @@
     transition: transform 200ms ease-in;
     align-self: normal;
     padding:10px;
+    color: white;
 
     &_image{
         height: 11rem;

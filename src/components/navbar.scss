@@ -1,6 +1,5 @@
 .wrapper{
     border:5px;
-    border-radius: 50% solid rgb(255, 0, 255);
     padding-top:1rem;
     text-align: center;
     
@@ -38,24 +37,19 @@
             background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
             padding: 0.2rem;
             margin: 1rem;
-            //border-radius: 1rem;
             a{
                 display: block;
                 padding:0.3rem;
                 background: #333;
                 color: #fff;
                 font-size:1rem;
-                //border-radius:0.7rem;
                 text-decoration: none;
                 font-variant: small-caps;
             }
             a:hover{
-            
                 background: whitesmoke;
                 color: #111;
-            
             }
-            
         }
     }
 }

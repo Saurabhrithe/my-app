@@ -17,7 +17,7 @@ import ml from "../assets/material/ml.jpg"
 const data =[
     {
         id: 0,
-        skill_title:"HTML 5",
+        skill_title:"HTML5",
         image: html
     },
     {
@@ -65,12 +65,12 @@ export default function Skills() {
                My Skills
            </h3>
            <div className="skill_items">
-           {data.map(function(d, idx){
-         return (
-            <SkillsItems skill_title={d.skill_title} skill_image={d.image}/>
+                {data.map(function(d, idx){
+                    return (
+                        <SkillsItems skill_title={d.skill_title} skill_image={d.image}/>
             
-            )
-       })}
+                    )
+                })}
            </div>
         </div>
     )

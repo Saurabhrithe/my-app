@@ -7,9 +7,9 @@ $phone = $_POST['phone'];
 $message= $_POST['msg'];
 $to = "srsr70srsr@gmail.com";
 $subject = "Portfolio Mail";
-$txt ="Name = ". $fname+" "+.$lname . "\r\n Phone =" . $phone . "\r\n  Email = " . $email . "\r\n Message =" . $message;
-$headers = "From: noreply@yoursite.com" . "\r\n" .
-"CC: somebodyelse@example.com";
+$txt ="Name = ". $fname . "\r\n Phone =" . $phone . "\r\n  Email = " . $email . "\r\n Message =" . $message;
+$headers = "From: noreply@yoursite.com" . "\r\n";
+
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }

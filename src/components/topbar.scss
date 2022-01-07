@@ -7,9 +7,23 @@
   justify-content: space-between;
   transition: 1s smooth;
   align-items: center;
+
+
+  border:2px solid transparent;
+  border-image: linear-gradient(0deg, #f0f, #00f);
+  border-image-slice: 1;
+  box-shadow: 0 5px 5px;
   .headerName{
     padding-left: .5rem;
     padding-right: 0.5rem;
+    animation: blink 4s linear infinite;
+    color: #F5DEB3;
+    transition: 1sec;
+  }
+  @keyframes blink {
+    30%{color: #008080;};
+    30%{color: #00FA9A;}
+    
   }
   .topbar{
       width:80px;

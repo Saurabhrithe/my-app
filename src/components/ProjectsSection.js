@@ -1,6 +1,6 @@
 import React from 'react'
 import './projects.scss'
-//import projects from '../assets/data/projects'
+
 import ProjectItems from './ProjectItems'
 
 import IPL from "../assets/material/IPL.jpg"
@@ -17,6 +17,7 @@ export default function ProjectsSection() {
                 <ProjectItems
                 img={IPL} 
                 title="IPL First Innings Score Predictor"
+                link="https://ml-scorepredictor.herokuapp.com/"
                 desc={
                     ["Developed ML model that predicts first inning score in the IPL match using Random Forest Regression Algorithm.", 
                     "Used Python Flask framework and html, CSS to deploy the model."]
@@ -25,23 +26,21 @@ export default function ProjectsSection() {
                 <ProjectItems 
                 img={Pneumonia_detection}
                 title="Pneumonia Detection Webapp"
+                link="https://pneumonia--detection.herokuapp.com/"
                 desc={
-                    ["Developed a model for classification of pneumonia and normal image with a Kaggle Dataset using Convolutional Neural Network.",
-                    "After training and evaluation, model was saved for the future use",
-                    "To deploy it on Heroku HTML, CSS was used to build the GUI and trained model was used in the backend."]
+                    ["The classification model was build to detect the pneumonia and normal image with a Kaggle Dataset using Convolutional Neural Network.",
+                    " To deploy it on Heroku HTML, CSS was used to build the GUI and trained model was used in the backend."]
                     }
                 />
                 <ProjectItems 
                 img={portfolio1}
                 title="Portfolio"
+                link="#"
                 desc={
                     ["In this project, I made my portfolio website by using react and HTML/CSS"]
                     }
                 />
             </div>
-            
-           
-
         </div>
     )
 }

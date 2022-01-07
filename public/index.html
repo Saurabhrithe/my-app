@@ -9,7 +9,6 @@
 
     
     
-    
     <style>
       *{
         margin: 0;
@@ -23,10 +22,20 @@
       }
       
     </style>
-    <title>React App</title>
+    <title>Saurabh Rithe</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <form name="contact" netlify netlify-honeypot="bot-field" action="/" hidden>
+                 
+                    <input type="hidden" name="contact" value="contact" />
+                    
+                    <input type="text" className="name" name="name" placeholder='Name'/>
+                    
+                    <input type="text" className="mail_id" name="mail" placeholder='Email'/>
+        
+                    
+                    <textarea placeholder="Your message" name="msg" className="msg"></textarea> 
+    </form>
     <div id="root"></div>
     
   </body>
