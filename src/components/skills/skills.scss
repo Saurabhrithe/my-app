@@ -10,9 +10,9 @@
         padding: 1rem;
         max-width:550px;
         margin: 0 auto;
-        color: white;
-        text-decoration: underline;
+        text-shadow: 3px 3px 3px #00FFFF;
         font-variant: small-caps;
+        font-size: 1.5rem;
     }
     .skill_items{
         border: 2px solid white;
@@ -21,9 +21,7 @@
         display: grid;
         
         border-radius: 10px;
-        color: white;
         grid-template-columns: repeat(auto-fit, minmax(3rem, 5.7rem));
-        
         gap: 1rem;
         justify-content: center;
         padding:1rem;
@@ -57,6 +55,9 @@
     .skill_image{
         width: 60px;
         object-fit: cover;            
+    }
+    .skill_body:hover{
+        transform: translateY(7px);
     }
     .skill_title{
         padding:0.5rem;

@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './topbar.scss'
 
-export default function Topbar({menuOpen, setMenuOpen}) {
+export default function Topbar({menuBar, setmenuBar}) {
     return (
             <div className="topname">
-                <div className={"topbar " + (menuOpen && "active")}>
-                    <div className="hamburger " onClick={()=>setMenuOpen(!menuOpen)}>
+                <div className={"topbar " + (menuBar && "active")}>
+                    <div className="menuButton " onClick={()=>setmenuBar(!menuBar)}>
                         <span className='line1'> </span>
                         <span className='line2'> </span>
                         <span className='line3'> </span>

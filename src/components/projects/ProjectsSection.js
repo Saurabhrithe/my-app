@@ -3,9 +3,9 @@ import './projects.scss'
 
 import ProjectItems from './ProjectItems'
 
-import IPL from "../assets/material/IPL.jpg"
-import Pneumonia_detection from "../assets/material/Pneumonia_detection.jpg"
-import portfolio1 from "../assets/material/portfolio1.jpg"
+import IPL from "../../assets/material/IPL.jpg"
+import Pneumonia_detection from "../../assets/material/Pneumonia_detection.jpg"
+import portfolio1 from "../../assets/material/portfolio1.jpg"
 
 
 export default function ProjectsSection() {
@@ -34,10 +34,10 @@ export default function ProjectsSection() {
                 />
                 <ProjectItems 
                 img={portfolio1}
-                title="Portfolio"
+                title="Portfolio website"
                 link="#"
                 desc={
-                    ["In this project, I made my portfolio website by using react and HTML/CSS"]
+                    ["This portfolio website gives you an information about my skills and projects. Build by using react, HTML5/CSS."]
                     }
                 />
             </div>

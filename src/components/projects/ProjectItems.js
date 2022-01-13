@@ -1,9 +1,6 @@
 import React from 'react'
 import './projects.scss'
 
-//import IPL from "../assets/material/IPL.jpg"
-//import { Link }  from 'react-router-dom'
-
 export default function ProjectItems(props) {
     return (
         <div className='card'>

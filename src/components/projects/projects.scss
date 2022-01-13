@@ -9,9 +9,9 @@
         padding: 1rem;
         max-width: 550px;
         margin: 0 auto;
-        color: white;
-        text-decoration: underline;
+        text-shadow: 3px 3px 3px #00FFFF;
         font-variant: small-caps;
+        font-size: 1.5rem;
     }
     .Items{
         display: grid;
@@ -20,61 +20,55 @@
         justify-content: center;
         align-items: center;
         padding:1rem;
-
         flex-wrap: wrap;
-        
   }
 }
 .card{
     background-color: #555;
-    
     box-shadow: 0 2px 5px 5px;
     border-radius: 25px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    
-    transition: transform 200ms ease-in;
     align-self: normal;
     padding:10px;
-    color: white;
 
-    &_image{
+    .card_image{
         height: 11rem;
         width: 100%;
         object-fit: cover;
         border-radius: 30px;
     }
-    &_title{
+    .card_title{
         padding:0.5rem;
         font-size: 1rem;
         font-weight: 550;
     }
-    &_desc{
-        
+    .card_desc{
         padding: 0 0.5rem;
         margin-bottom: 10px;
         font-size: 0.8rem;
     }
-    &_btn{
-        padding: 0.2rem;
-        font-family:'Times New Roman', Times, serif;
-
+    .card_btn{
+        font-family:cursive;
         font-weight: bold;
         font-size: 1rem;
         
-        border: 2px solid red;
+        border: 2px solid blue;
         background: white;
+
         color: black;
-        border-radius: 5px;
+        border-radius: 50px;
         width: 80px;
         margin-left: 1rem;
         margin-top: 0.5rem;
         text-align: center;
-
         cursor: pointer;
         text-decoration: none;
         }
+}
+.card:hover{
+    transform: translateY(5px);
 }
     
 

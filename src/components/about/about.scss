@@ -9,9 +9,11 @@
         max-width:550px;
         margin: 0 auto;
         color: white;
-        text-decoration: underline;
+        text-shadow: 3px 3px 3px #00FFFF;
+
         font-variant: small-caps;
         border-bottom: 2px solid yellow;
+        font-size: 1.5rem;
     }
     
     .boxA{
@@ -32,9 +34,11 @@
         .myname{
             font-weight: 500;
             font-size: 1.5rem;
+            
         }
         .text{
             width:450px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .cv{
             padding: 0.2rem;

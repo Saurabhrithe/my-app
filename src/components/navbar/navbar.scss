@@ -2,9 +2,7 @@
     border:5px;
     padding-top:1rem;
     text-align: center;
-    
     .top{
-        color: white;
         padding: 0.5rem;
         .outer{
             background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
@@ -28,7 +26,6 @@
         .name{
             font-size:1.5rem;
             font-weight: 500;
-            color: #fff;
         }
     }
     .menu ul{
@@ -51,5 +48,6 @@
                 color: #111;
             }
         }
+        
     }
 }

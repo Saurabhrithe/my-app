@@ -2,14 +2,14 @@ import React from 'react'
 import './skills.scss'
 import SkillsItems from './SkillsItems'
 
-import html from "../assets/material/html.png"
-import css from "../assets/material/css.png"
-import react from "../assets/material/react.jpg"
-import java from "../assets/material/java.png"
-import python from "../assets/material/python.png"
-import flask from "../assets/material/flask.png"
-import github from "../assets/material/github.jpg"
-import ml from "../assets/material/ml.jpg"
+import html from "../../assets/material/html.png"
+import css from "../../assets/material/css.png"
+import react from "../../assets/material/react.jpg"
+import java from "../../assets/material/java.png"
+import python from "../../assets/material/python.png"
+import flask from "../../assets/material/flask.png"
+import github from "../../assets/material/github.jpg"
+import ml from "../../assets/material/ml.jpg"
 
 
 
@@ -68,7 +68,6 @@ export default function Skills() {
                 {data.map(function(d, idx){
                     return (
                         <SkillsItems skill_title={d.skill_title} skill_image={d.image}/>
-            
                     )
                 })}
            </div>
