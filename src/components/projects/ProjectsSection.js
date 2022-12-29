@@ -17,7 +17,7 @@ export default function ProjectsSection() {
                 <ProjectItems
                 img={IPL} 
                 title="IPL First Innings Score Predictor"
-                link="https://ml-scorepredictor.herokuapp.com/"
+                link="https://ml-scorepredictor.onrender.com/"
                 desc={
                     ["Developed ML model that predicts first inning score in the IPL match using Random Forest Regression Algorithm.", 
                     "Used Python Flask framework and html, CSS to deploy the model."]
@@ -30,6 +30,15 @@ export default function ProjectsSection() {
                 desc={
                     ["The classification model was build to detect the pneumonia and normal image with a Kaggle Dataset using Convolutional Neural Network.",
                     " To deploy it on Heroku HTML, CSS was used to build the GUI and trained model was used in the backend."]
+                    }
+                />
+                <ProjectItems 
+                img={Crop_Info}
+                title="Crop Info"
+                link="https://cropinfo.onrender.com"
+                desc={
+                    ["Developed ML model for prediction of suitable crops based on soil compositions along with live weather condition and past year’s weather analysis for a particular region.",
+                    "Dataset was taken from Kaggle and then further data analysis was done through pandas, NumPy. Used Python Flask framework and HTML, CSS to deploy the model."]
                     }
                 />
                 <ProjectItems 
