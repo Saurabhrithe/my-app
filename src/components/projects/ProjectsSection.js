@@ -6,7 +6,7 @@ import ProjectItems from './ProjectItems'
 import IPL from "../../assets/material/IPL.jpg"
 import Pneumonia_detection from "../../assets/material/Pneumonia_detection.jpg"
 import portfolio1 from "../../assets/material/portfolio1.jpg"
-
+import Crop_Info from "../../assets/material/Crop_Info.jpg"
 
 export default function ProjectsSection() {
     return (
@@ -26,10 +26,10 @@ export default function ProjectsSection() {
                 <ProjectItems 
                 img={Pneumonia_detection}
                 title="Pneumonia Detection Webapp"
-                link="https://pneumonia--detection.herokuapp.com/"
+                link="https://pneumonia-detection-hz4q.onrender.com"
                 desc={
                     ["The classification model was build to detect the pneumonia and normal image with a Kaggle Dataset using Convolutional Neural Network.",
-                    " To deploy it on Heroku HTML, CSS was used to build the GUI and trained model was used in the backend."]
+                    " To deploy it on Render HTML, CSS was used to build the GUI and trained model was used in the backend."]
                     }
                 />
                 <ProjectItems 
