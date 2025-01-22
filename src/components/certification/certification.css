@@ -1,0 +1,35 @@
+
+.certifications{
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .certification-header{
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;
+        max-width:550px;
+        margin: 0 auto;
+        color: white;
+        text-shadow: 2px 1px 4px #00FFFF;
+        font-variant: small-caps;
+        font-size: 2rem;
+    }
+    .boxA{
+        box-shadow: 0 0 15px rgb(0, 255, 255);
+        background-color: rgb(74, 72, 72);
+        border-radius:1rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        max-width: 550px;
+        padding: 1rem;
+        color: white;
+        ul li{
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}

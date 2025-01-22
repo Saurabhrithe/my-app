@@ -1,5 +1,5 @@
 import React from 'react'
-import './projects.scss'
+import './projects.css'
 
 export default function ProjectItems(props) {
     return (
@@ -9,7 +9,8 @@ export default function ProjectItems(props) {
                 <h2 className='card_title'>{props.title}</h2>
                 <p className='card_desc'>{props.desc}</p>
             </div> 
-            <a className="card_btn" href={props.link}>View</a>  
+            <a className="card_btn" href={props.link}>View</a> 
+             
         </div>
     )
 }
