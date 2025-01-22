@@ -2,22 +2,19 @@
     padding: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    .AboutMe{
+    .heading{
         text-align: center;
         margin-top: 1rem;
         padding: 1rem;
         max-width:550px;
         margin: 0 auto;
         color: white;
-        text-shadow: 3px 3px 3px #00FFFF;
-
+        text-shadow: 2px 1px 4px #00FFFF;
         font-variant: small-caps;
-        border-bottom: 2px solid yellow;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
     .boxA{
-        border: 2px solid white;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -25,7 +22,7 @@
         margin-bottom: 2rem;
         border-radius: 10px;
         max-width: 550px;
-        
+       
         padding: 1rem;
         color: white;
         .hi{
@@ -60,18 +57,26 @@
                 margin-top:1.5rem;
                 padding-top:0.5rem;
                 margin-left: 0;
+                
                 .icon{
                     width:40px;
                     height:40px;
                     padding: 0.5rem;
                     background-color: white;
                     border-radius: 50%;
+                    border: 3px solid cyan;
+                    box-shadow: 0 1px 8px rgb(0, 255, 255);
                     text-align: center;
                     margin-right: 1rem;
                 }
             }
         }
     }
+    .boxA:hover{
+        transform: translateY(5px);
+        cursor: pointer;
+    }
+    
     @media only screen and (max-width: 600px) { 
         .boxA{
             .text{

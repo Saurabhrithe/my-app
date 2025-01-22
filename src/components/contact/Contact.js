@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import './contact.scss'
+import './contact.css'
 import axios from 'axios';
 
 
@@ -9,16 +9,23 @@ export default function Contact() {
 	const [message, setMessage] = useState('');
 	
 
+
+
+    
 	const afterSubmit = () => {
+        //a.preventDefault();
+
+    
         const entries = { name, email, message};
+        console.log(name, email);
 
 		axios.post(
-				'https://sheet.best/api/sheets/c9cc78ba-a0c9-4c0a-916d-4861d96445ac',
-				entries,
+				'https://sheet.best/api/sheets/ab77291c-2b1d-4da6-9cf6-5b862df93162', entries,
                 alert("I received your message. Thank You!")
 			)
 	};
-   
+    
+
     return (
         <div className='contact' id='contact'>
             
@@ -40,7 +47,6 @@ export default function Contact() {
 
                 </form>
                 <div className="social_contact">
-                    <div className="icon"><a href="https://www.instagram.com/saurabhrithe/"><i className="fab fa-instagram"></i></a></div>
                     <div className="icon"><a href="mailto:715saurabh@gmail.com"><i className="fas fa-envelope"></i></a></div>
                     <div className="icon"><a href="https://github.com/Saurabhrithe"><i className="fab fa-github"></i></a></div>
                     <div className="icon"><a href="https://www.linkedin.com/in/saurabhrithe/"><i className='fab fa-linkedin'/></a></div>

@@ -1,0 +1,81 @@
+.experience{
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .exp-header{
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;
+        max-width:550px;
+        margin: 0 auto;
+        color: white;
+        text-shadow: 2px 1px 4px #00FFFF;
+        font-variant: small-caps;
+        font-size: 2rem;
+    }
+    .boxA{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        max-width: 550px;
+        color: white;
+       .timeline-row{
+        width: 100%;
+        .timeline-box{
+            border-left:5px solid #0eb6b6;
+            .content-box:hover{
+                transform: translateY(5px);
+                cursor: pointer;
+            }
+            .content-box{
+                margin-left:1rem;
+                padding:1rem;
+                background-color:rgb(74, 72, 72);
+                margin-bottom: 1rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 0 15px rgb(0, 255, 255);
+
+                .role-fte{
+                    font-weight:bold;
+                    font-size:1rem;
+                    color:#f6f6f6;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    padding-bottom: 0.1rem;
+
+                }
+                .role-date{
+                    font-weight:450;
+                    font-size:0.7rem;
+                    color:#f6f6f6;
+                    padding-bottom:0.5rem;
+                    
+                }
+                .desc{
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    padding: 0.2rem;
+                }
+            }
+        }
+        .timeline-box::before{
+            position: absolute;
+            content: '';
+            height: 1rem;
+            width: 1rem;
+            border-radius:50%;
+            background-color: cyan;
+            transform: translate(-65%);
+        }
+       }
+    }
+    @media only screen and (max-width: 600px) { 
+        .boxA{
+            .text{
+                width:auto;
+            }
+        }
+    }
+}
+    

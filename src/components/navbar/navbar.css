@@ -5,14 +5,14 @@
     .top{
         padding: 0.5rem;
         .outer{
-            background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+            
             display: flex;
             justify-content: center;
             align-items: center;
             width:7.2rem;
             height:7.2rem;
             margin: 0 auto;
-
+            background-color: rgb(136, 245, 245);
             border-radius: 50%;
         }
         img{
@@ -21,31 +21,39 @@
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid ;
-            background-color: #111;
+            
         }
         .name{
             font-size:1.5rem;
             font-weight: 500;
+            font-family: cursive;
         }
     }
     .menu ul{
-        padding: 1.5rem 3rem;
+        padding: 2rem 3rem;
         li{
-            background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+            background: rgb(141, 210, 222);
             padding: 0.2rem;
-            margin: 1rem;
+            margin: 0.5rem;
+            border-radius: 0.2rem;
+            list-style-type: none;;
+            box-shadow: 0 0 5px rgb(0, 255, 255);
             a{
                 display: block;
-                padding:0.3rem;
+                padding:0.5rem;
                 background: #333;
                 color: #fff;
-                font-size:1rem;
+                font-size:0.8rem;
                 text-decoration: none;
                 font-variant: small-caps;
+                border-radius: 0.2rem;
+                font-weight: 600;
+                
             }
             a:hover{
                 background: whitesmoke;
-                color: #111;
+                color: #0d0ade;
+                font-weight:500;
             }
         }
         

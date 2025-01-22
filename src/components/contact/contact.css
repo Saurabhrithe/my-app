@@ -1,5 +1,5 @@
 .contact{
-    background-color: #2d3e50;
+    background-color: #343b42;
     display: flex;
     flex-direction: column;
     .contact_head{
@@ -9,8 +9,9 @@
         width:100%;
         margin: 0 auto;
         color: white;
-        text-shadow: 3px 3px 3px #dbecec;
+        text-shadow: 2px 1px 4px #00FFFF;
         font-variant: small-caps;
+        font-size: 2rem;
     }
     .box_contact{ 
         max-width: 600px;
