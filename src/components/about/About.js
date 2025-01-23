@@ -30,4 +30,3 @@ export default function About() {
         </div>
     )
 }
-//<a className='Resume' href="#">Download Resume</a>
