@@ -29,7 +29,7 @@ function App() {
         <ProjectsSection />
         <Certification />
         <Contact />
-        <div className="bottom">Copyright © Saurabh Rithe</div>
+        <div className="bottom"><b>Designed by @sR</b></div>
       </div>
       </div>
     </div>

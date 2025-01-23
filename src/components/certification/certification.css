@@ -17,16 +17,16 @@
     .boxA{
         box-shadow: 0 0 15px rgb(0, 255, 255);
         background-color: rgb(74, 72, 72);
-        border-radius:1rem;
         margin: 0 auto;
         margin-top: 1rem;
         margin-bottom: 2rem;
-        max-width: 550px;
+        max-width: 650px;
         padding: 1rem;
         color: white;
-        ul li{
-            padding: 0.5rem;
-            font-size: 1rem;
+
+        p{
+            padding: 0.3rem;
+            font-size: small;
         }
         a{
             text-decoration: none;

@@ -67,7 +67,7 @@ export default function Skills() {
         <ul>
           <li>
             <p className="skill-heading">Tools & Technologies</p>
-            <p>&bull; Informatica, Git & GitHub, Python</p>
+            <p>&bull; Informatica, ETL, Git & GitHub, Python</p>
           </li>
           <li>
             <p className="skill-heading">Database</p>
@@ -75,7 +75,7 @@ export default function Skills() {
           </li>
           <li>
             <p className="skill-heading">Libraries and Frameworks</p>
-            <p>&bull; Flask, Numpy, Panda</p>
+            <p>&bull; Flask, Numpy, Pandas</p>
           </li>
           <li>
             <p className="skill-heading">Familiar</p>
