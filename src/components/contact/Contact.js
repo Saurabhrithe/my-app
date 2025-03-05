@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import './contact.css'
 import axios from 'axios';
-
+import contact from '../../assets/material/contact.jpg'
+import footer from '../../assets/material/footer2.jpg'
 
 export default function Contact() {
    	const [name, setName] = useState('');
@@ -28,14 +29,17 @@ export default function Contact() {
 
     return (
         <div className='contact' id='contact'>
-            
+            <div className="container">
+                <img src={contact} alt="" className="icon" />
+                <h3 className="field-header"> Contact me</h3>
+            </div>
             <div className="box_contact">
-                <h3 className="contact_head">
-                    Contact Me
-                </h3>
-                 <form name="contact" onSubmit={afterSubmit} autoComplete='off'>
-                    <input className="name" placeholder='Name' onChange={(e) => setName(e.target.value)} required/>
 
+                 <form name="contact" onSubmit={afterSubmit} autoComplete='off'>
+                    <div className="name">
+                        <input className="fname" placeholder='First Name' onChange={(e) => setName(e.target.value)} required/>
+                        <input className="lname" placeholder='Last Name' onChange={(e) => setName(e.target.value)} required/>
+                    </div>
                     <input className="mail_id" placeholder='Email' onChange={(e) => setEmail(e.target.value)} required/>
                     
                     <textarea placeholder="Your message" className="msg" onChange={(e) => setMessage(e.target.value)} required></textarea>
@@ -46,13 +50,25 @@ export default function Contact() {
                     </div>
 
                 </form>
+                
                 <div className="social_contact">
-                    <div className="icon"><a href="mailto:715saurabh@gmail.com"><i className="fas fa-envelope"></i></a></div>
-                    <div className="icon"><a href="https://github.com/Saurabhrithe"><i className="fab fa-github"></i></a></div>
-                    <div className="icon"><a href="https://www.linkedin.com/in/saurabhrithe/"><i className='fab fa-linkedin'/></a></div>
+                    <img src={footer} alt="" />
+                    <div className="icon-container">
+                        <div className="icon"><a href="mailto:715saurabh@gmail.com"><i className="fas fa-envelope"></i></a></div>
+                        <div className="icon"><a href="https://github.com/Saurabhrithe"><i className="fab fa-github"></i></a></div>
+                        <div className="icon"><a href="https://www.linkedin.com/in/saurabhrithe/"><i className='fab fa-linkedin'/></a></div>
+                    </div>
+                    <div className="footer-link">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#projects">Projects</a>
+                        
+                    </div>
                 </div>
-            </div>
 
+            </div>
+            
         </div>
 
         

@@ -1,16 +1,39 @@
+
+  
 .main_projects{
     padding: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    .ProjectHead{
-        text-align: center;
-        margin-top: 1rem;
-        padding: 1rem;
-        max-width: 550px;
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        
         margin: 0 auto;
-        text-shadow: 2px 1px 4px #00FFFF;
-        font-variant: small-caps;
-        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        .icon{
+            height: 40px;
+          padding: 0.5rem;
+          /* background-color: #eee9e9; */
+          background-color:WHITE;
+          border-radius: 50%;
+
+          /* box-shadow: inset -2px -5px 10px 0 cyan; */
+          box-shadow: inset -2px -5px 10px 0 rgb(16, 82, 107);
+          text-align: center;
+          margin-right: 1rem;
+            
+
+           
+        }
+        .field-header{
+            color: white;
+            text-shadow: 2px 1px 4px #00FFFF;
+            font-variant: small-caps;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
     }
     .Items{
         display: grid;
@@ -76,4 +99,3 @@
     cursor: pointer;
 }
     
-

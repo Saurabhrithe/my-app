@@ -1,6 +1,8 @@
 import React from 'react'
 import './projects.css'
+import project from '../../assets/material/project.jpg'
 
+import Zoom from 'react-reveal/Zoom'
 import ProjectItems from './ProjectItems'
 
 import IPL from "../../assets/material/IPL.jpg"
@@ -8,11 +10,16 @@ import Pneumonia_detection from "../../assets/material/Pneumonia_detection.jpg"
 import portfolio1 from "../../assets/material/portfolio1.jpg"
 import Crop_Info from "../../assets/material/Crop_Info.jpg"
 import short_notes from "../../assets/material/short_notes.jpg"
+import { Bounce } from 'react-reveal'
 
 export default function ProjectsSection() {
     return (
         <div className="main_projects" id="projects">
-            <h3 className='ProjectHead'>My Projects</h3>
+            <div className="container">
+                <img src={project} alt="" className="icon" />
+                <h3 className="field-header"> My Projects</h3>
+            </div>
+            
             <div className="Items">
                 <ProjectItems 
                 img={Crop_Info}
@@ -31,7 +38,6 @@ export default function ProjectsSection() {
                     ["This portfolio website gives you an information about my skills and projects. Build by using react, HTML5/CSS."]
                     }
                 />
-                
                 <ProjectItems
                 img={IPL} 
                 title="IPL First Innings Score Predictor"

@@ -1,46 +1,76 @@
 .contact{
-    background-color: #343b42;
     display: flex;
     flex-direction: column;
-    .contact_head{
-        text-align: center;
-        margin-top: 1rem;
-        padding: 1rem;
-        width:100%;
+    padding: 0.2rem;
+    .container{
+        display: flex;
+        flex-direction: row;
+        
         margin: 0 auto;
-        color: white;
-        text-shadow: 2px 1px 4px #00FFFF;
-        font-variant: small-caps;
-        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        .icon{
+            height: 40px;
+            width: 40px;
+            padding: 0.5rem;
+            /* background-color: #eee9e9; */
+            background-color:WHITE;
+            border-radius: 50%;
+  
+            box-shadow: inset -2px -5px 10px 0 rgb(24, 39, 39);
+            text-align: center;
+            margin-right: 1rem;
+           
+        }
+        .field-header{
+            color: white;
+            text-shadow: 2px 1px 4px #00FFFF;
+            font-variant: small-caps;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
     }
     .box_contact{ 
-        max-width: 600px;
-        margin-top: 1rem;
+        max-width: 700px;
+        padding: 1rem;
+        box-shadow: inset -2px -5px 10px 0 rgb(24, 39, 39);
         display: flex;
         flex-wrap: wrap;
+        background-color: rgb(217, 236, 236);
+        
         justify-content: space-between;
         border-radius: 10px;
         padding: 1rem;
         margin: 0 auto;
+       
         form{
            display: flex;
            flex-direction: column;
-            .name, .mail_id, .msg, .contact_button{
-                margin: 0.3em;
+           padding-left:1rem;
+           padding-right: 1rem;
+           
+            .fname, .lname, .mail_id, .msg, .contact_button{
+                margin: 0.3rem;
                 padding: 0.3rem;
                 border-radius: 7px;
+                border: 1px solid black ;
                 font-size: 0.7rem;
+                width: 650px;
             } 
-            .name, .mail_id{
-                width: 250px;
+            .mail_id{
+                width: 300px;
+            }
+            .fname, .lname{
+                width: 145px;
             }
             .msg{
                 height: 100px;
-                width: 250px;
+                width: 300px;
             }
             .contact_button{
                 background: #333;
                 width:80px;
+                background-color: blue;
                 font-weight: 900;
                 height:30px;
                 text-align: center;
@@ -53,11 +83,41 @@
                 font-style: italic;
             }
         }
-        .social_contact{
-            max-width: 80px;
+        
+        
+    }
+    .social_contact{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 1.5rem;
+       
+        img{
+            
+            max-height: 60px;
+            max-width: 310px;
+            border-radius: 0.5rem;
+            
+        }
+        .footer-link{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-between;
             padding: 1rem;
+            a{
+                color: rgb(11, 43, 125);
+                text-decoration: none;
+                font-variant:initial;
+                font-weight: 600;
+            }
+        }
+        .icon-container{
+           
+            display: flex;
+            flex-direction: row;
+            
+            width: 280px;
             .icon{
                 width:40px;
                 height:40px;
@@ -65,17 +125,17 @@
                 background-color: white;
                 border-radius: 50%;
                 text-align: center;
-               
+                box-shadow: inset -2px -5px 10px 0 rgb(128, 144, 144);
                 margin: 0 auto;
                 margin-top: 0.5rem;
                 margin-right: 1rem;
             }
         }
-        @media only screen and (max-width: 450px){
-            .social_contact{
-                flex-direction: row;
-                max-width:300px;
-            }
-        }
+    }
+}
+@media only screen and (max-width: 650px){
+    .icon-container{
+        display: flex;
+        flex-direction: column;
     }
 }

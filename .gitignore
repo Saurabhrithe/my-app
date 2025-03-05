@@ -11,6 +11,10 @@
 # production
 /build
 
+#personal
+/public/favicon.ico
+/src/assets
+
 # misc
 .DS_Store
 .env.local
