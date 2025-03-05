@@ -9,15 +9,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width:7.2rem;
-            height:7.2rem;
+            width:4rem;
+            height:4rem;
             margin: 0 auto;
             background-color: rgb(136, 245, 245);
             border-radius: 50%;
         }
         img{
-            height:7rem;
-            width:7rem;
+            
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid ;

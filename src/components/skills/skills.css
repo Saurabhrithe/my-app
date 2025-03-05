@@ -1,66 +1,62 @@
 .skills{
-    padding: 1rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-   
-    .boxA{
+    .container{
         display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 0 10px;
-        border-radius: 10px;
-        max-width: 550px;
-        background-color: rgb(74, 72, 72);
-        padding: 1rem;
-        color: whitesmoke;
-        box-shadow: 0 0 15px rgb(0, 255, 255);
-
-        .skill-heading{
-            font-family: 2rem;
-            font-weight: bold;
-        }
-        ul li{
-            padding: 5px;
-        }
-    }
-    .boxA:hover{
-        transform: translateY(5px);
-        cursor: pointer;
-    }
-    
-    .skill_head{
+        flex-direction: row;
         
-        text-align: center;
-        margin-top: 1rem;
-        padding: 1rem;
-        max-width:550px;
         margin: 0 auto;
-        text-shadow: 2px 1px 4px #00FFFF;
-        font-variant: small-caps;
-        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        .icon{
+            /* box-shadow: inset -2px -5px 10px 0 cyan;
+            border-radius: 2rem;
+            
+            width: 2.3rem;
+            height: 2.3rem;
+            padding: 0.2rem; */
+            width: 40px;
+          height: 40px;
+          padding: 0.5rem;
+          /* background-color: #eee9e9; */
+          background-color:WHITE;
+          border-radius: 50%;
+
+          /* box-shadow: inset -2px -5px 10px 0 cyan; */
+          box-shadow: inset -2px -5px 10px 0 rgb(24, 39, 39);
+          text-align: center;
+          margin-right: 1rem;
+            
+
+           
+        }
+        .field-header{
+            color: white;
+            text-shadow: 2px 1px 4px #00FFFF;
+            font-variant: small-caps;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
     }
-    /* .skill_items{
-        border: none;
-        max-width:550px;
+    .skill_items{
+        max-width:650px;
         margin: 0 auto;
         display: grid;
-        
         border-radius: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(3rem, 5.7rem));
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 5rem));
+        
+        gap: 2rem;
         justify-content: center;
         padding:1rem;
         flex-wrap: wrap;
         margin-top: 1rem;
         margin-bottom: 2rem;
-    } */
+    }
     
 }
-/* .skill_box{
+.skill_box{
     overflow: hidden;
-    border-radius: 25px;
+    
+   
+    border-radius: 2px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -69,28 +65,61 @@
     align-self: normal;
     padding:1px;
     align-items: center;
+    .skill_body:hover{
+        transform: translateY(0.5rem);
+        cursor: pointer;
+    }
     .skill_body{
-        background-color:#fff;
-        border-radius: 45px;
-        width:90px;
-        height:90px;
+        transform: translateY(0.2rem);
+        background-color:rgb(255, 253, 253);
+        box-shadow: 0 0 15px rgb(141, 210, 222);
+       
+        border-radius: 2rem;
+        width:6.5rem;
+        height:6.5rem;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        display: flex;
+        flex-direction: column;
     }    
     .skill_image{
-        width: 60px;
-        object-fit: cover;            
-    }
-    .skill_body:hover{
-        transform: translateY(7px);
+        
+        width:5rem;
+        
+        object-fit: cover;    
+               
     }
     .skill_title{
-        padding:0.5rem;
-        font-size: 0.8rem;
-        font-weight: 500;
+        color: #f1eded;
+        font-style: normal;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        padding-top: 10px;
+        width: 6.5rem;
+        font-size: 1rem;
+        font-variant: small-caps;
+        
     }
-    
+    .animation {
+        animation-timeline: view(60% 10%);
+      
+        animation-name: grow;
+        animation-fill-mode: both;
+        animation-duration: 1ms; /* Firefox requires this to apply the animation */
+        animation-timing-function: linear;
+        background-color: red;
+      }
+      
+      @keyframes grow {
+        from {
+          transform: scaleX(-120px);
+        }
+      
+        to {
+          transform: scaleX(1);
+        }
+      }
 }
-     */
+    

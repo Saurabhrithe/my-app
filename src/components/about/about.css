@@ -1,47 +1,106 @@
-.about{
-    padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    .heading{
-        text-align: center;
-        margin-top: 1rem;
-        padding: 1rem;
-        max-width:550px;
-        margin: 0 auto;
-        color: white;
-        text-shadow: 2px 1px 4px #00FFFF;
-        font-variant: small-caps;
-        font-size: 2rem;
+.about {
+  padding: 1rem;
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      box-shadow: inset -2px -5px 10px 0 cyan;
+      border-radius: 2rem;
+
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 0.2rem;
     }
+    .field-header {
+      color: white;
+      text-shadow: 2px 1px 4px #00ffff;
+      font-variant: small-caps;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+  }
+
+  .boxA {
     
-    .boxA{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    max-width: 750px;
+
+    padding: 1rem;
+    color: white;
+    .profile-img{
         display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        border-radius: 10px;
-        max-width: 550px;
-       
-        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin: 2rem;
+        pointer-events: none;
+        img{
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid ;
+            border-radius: 50%;
+            
+        }
+    }
+    .hi {
+      font-size: 1rem;
+    }
+    .myname {
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+    .text {
+      max-width: 450px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+      .btn {
+        max-width: 120px;
+        border-radius: 0.5rem;
+        border: 3px solid rgb(141, 210, 222);
+        box-shadow: 0 0 5px rgb(0, 255, 255);
+        align-items: center;
+        margin: 0.5rem;
+      }
+      a {
+        display: block;
+        padding: 0.5rem;
+        background: #333;
+        color: #fff;
+        font-size: 0.8rem;
+        text-decoration: none;
+        font-variant: small-caps;
+        border-radius: 0.2rem;
+        font-weight: 600;
+      }
+      a:hover {
+        display: block;
+        padding: 0.5rem;
+        background: #05a583;
         color: white;
-        .hi{
-            font-size: 1rem;
-        }
-        .myname{
-            font-weight: 500;
-            font-size: 1.5rem;
-            
-        }
-        .text{
-            width:450px;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .cv{
-            padding: 0.2rem;
-            margin-top: 1rem;
-            
-            /*.Resume{
+        font-size: 0.8rem;
+        text-decoration: none;
+        font-variant: small-caps;
+        border-radius: 0.2rem;
+        font-weight: 600;
+      }
+    }
+    .cv {
+      /* padding: 0.2rem;
+            margin-top: 1rem; */
+
+      /*.Resume{
                 max-width:160px;
                 padding: 0.5rem;
                 border-radius: 5px;
@@ -52,37 +111,36 @@
                 text-decoration: none;
                 color: black;
             }*/
-            .social{
-                display: flex;
-                margin-top:1.5rem;
-                padding-top:0.5rem;
-                margin-left: 0;
-                
-                .icon{
-                    width:40px;
-                    height:40px;
-                    padding: 0.5rem;
-                    background-color: white;
-                    border-radius: 50%;
-                    border: 3px solid cyan;
-                    box-shadow: 0 1px 8px rgb(0, 255, 255);
-                    text-align: center;
-                    margin-right: 1rem;
-                }
-            }
+      .social {
+        display: flex;
+        margin: 0.5rem;
+
+        .icon {
+          width: 40px;
+          height: 40px;
+          padding: 0.5rem;
+          /* background-color: #eee9e9; */
+          background-color:WHITE;
+          border-radius: 50%;
+
+          /* box-shadow: inset -2px -5px 10px 0 cyan; */
+          box-shadow: inset -2px -5px 10px 0 rgb(17, 20, 21);
+          text-align: center;
+          margin-right: 1rem;
         }
+      }
     }
-    .boxA:hover{
-        transform: translateY(5px);
-        cursor: pointer;
+  }
+  .profile-img:hover {
+    transform: translateY(5px);
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .boxA {
+      .text {
+        width: auto;
+      }
     }
-    
-    @media only screen and (max-width: 600px) { 
-        .boxA{
-            .text{
-                width:auto;
-            }
-        }
-    }
+  }
 }
-    

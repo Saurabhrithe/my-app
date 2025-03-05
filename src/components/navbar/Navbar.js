@@ -1,15 +1,13 @@
 import React from 'react'
 import "./navbar.css"
-import Photo1 from '../../assets/material/Photo1.jpg'
+import profile from '../../assets/material/profile.png'
 
 export default function Navbar({menuBar, setmenuBar}) {
     return (
         
             <div className={"wrapper "+(menuBar && "active")}>
                 <div className="top">
-                    <div className="outer">
-                    <img src={Photo1} alt="" />
-                    </div>
+                    
                     
                     <h2 className='name'>Saurabh Rithe</h2>
                     <p>ETL Developer, Cognizant</p>

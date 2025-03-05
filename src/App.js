@@ -14,25 +14,31 @@ function App() {
   const [menuBar, setMenuBar] = useState(false);
   return (
     <div className="container">
+      
+      <div className="wrapper-top">
+        <div className="header">
+          <Topbar menuBar={menuBar} setmenuBar={setMenuBar} />
+        </div>
+      </div>
+
       <div className="app">
-      <div className="header">
-        <Topbar menuBar={menuBar} setmenuBar={setMenuBar} />
-      </div>
-      <div className="content">
       <div className={"fixed-nav " + (menuBar && "active")}>
-        <Navbar menuBar={menuBar} setmenuBar={setMenuBar} />
+            <Navbar menuBar={menuBar} setmenuBar={setMenuBar} />
+          </div>
+        <div className="content">
+          <div className="info_section">
+            <About />
+            <Skills />
+            <Experience />
+            <ProjectsSection />
+            <Certification />
+            <Contact />
+            <div className="bottom">
+              <b>Designed by @sR</b>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="info_section">
-        <About />
-        <Skills />
-        <Experience />
-        <ProjectsSection />
-        <Certification />
-        <Contact />
-        <div className="bottom"><b>Designed by @sR</b></div>
-      </div>
-      </div>
-    </div>
     </div>
   );
 }
